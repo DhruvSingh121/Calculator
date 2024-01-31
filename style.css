@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+}
+body{
+    background-color: black;
+}
+.image{
+    background-image: url("samu.jpg");
+    filter: blur(40px);
+    -webkit-filter: blur(30px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    width: 100%; 
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* padding: 100px; */
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+}
+
+.calculator {
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* background-color: aliceblue; */
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.sign {
+    background-color: rgba(255, 194, 81);
+}
+
+.calculator .zero {
+    width: 146px;
+    border-radius: 30px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+}
+
+form .display input{
+    flex: 1;
+    box-shadow: none;
+    text-align: right;
+    font-size: 45px;
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+}
